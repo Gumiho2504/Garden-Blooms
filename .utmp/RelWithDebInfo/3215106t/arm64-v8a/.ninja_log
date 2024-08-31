@@ -1,0 +1,23 @@
+# ninja log v5
+1404	1479	1724838471782244340	/Users/rose/Documents/UnityGame/Garden Blooms/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3215106t/obj/arm64-v8a/libgame.so	80e7469fc6af9aa4
+0	1404	1724838471710978781	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	279331ae37c5c115
+1	1220	1724838471527153094	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	73abca58794fa5bf
+3	1092	1724838471398089388	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	6f593f7d0e0e4b47
+2	1065	1724838471372537480	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	4b8d73e3cb64ad17
+1	1075	1724838471381206810	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	6f38136bb9bdb0cd
+0	1047	1724838471349697654	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ed171df6f4bec4dc
+1	1324	1724838471630816517	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	687c9ffdb1fe43a6
+3	1161	1724838471467771531	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4dc9c24a69c54e18
+316	431	1724838470730288948	/Users/rose/Documents/UnityGame/Garden Blooms/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3215106t/obj/arm64-v8a/libswappywrapper.so	9e9126cc63611d1
+4	315	1724838470623803193	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ac3cf2cf759ae98c
+38	931	1724914258658671273	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	ac3cf2cf759ae98c
+932	1301	1724914259030024401	/Users/rose/Documents/UnityGame/Garden Blooms/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3215106t/obj/arm64-v8a/libswappywrapper.so	9e9126cc63611d1
+36	1509	1724914259238327775	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	6f593f7d0e0e4b47
+34	1622	1724914259353341897	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	6f38136bb9bdb0cd
+35	1640	1724914259372958258	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	4b8d73e3cb64ad17
+32	1650	1724914259382801627	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ed171df6f4bec4dc
+37	1702	1724914259431793845	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4dc9c24a69c54e18
+33	1739	1724914259471250445	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	73abca58794fa5bf
+35	1893	1724914259625601709	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	687c9ffdb1fe43a6
+28	1982	1724914259713016274	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	279331ae37c5c115
+1982	2056	1724914259786208287	/Users/rose/Documents/UnityGame/Garden Blooms/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3215106t/obj/arm64-v8a/libgame.so	80e7469fc6af9aa4
