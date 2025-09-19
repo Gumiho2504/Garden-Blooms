@@ -40,7 +40,16 @@ public class MenuController : MonoBehaviour
     {
         AnimateButtonPress(game);
         AudioController.Instance.PlaySFX("click");
-        Application.Quit();
+      
+        #if UNITY_EDITOR 
+        UnityEditor.EditorApplication.isPlaying = false;
+        #elif UNITY_WEBGL
+         
+        #else
+          Application.Quit();
+        #endif
+        
+        
     }
 
 

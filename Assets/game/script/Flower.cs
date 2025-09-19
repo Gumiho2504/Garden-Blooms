@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+
+
 public class Flower : MonoBehaviour
 {
     public enum FlowerType { Rose, Sunflower, Lily, Tulip }
@@ -41,7 +43,7 @@ public class Flower : MonoBehaviour
         // Placeholder: Update appearance based on level
         //transform.localScale = Vector3.one * (1.0f + 0.2f * level);
         LeanTween.scale(gameObject, Vector3.one * (1.0f + 0.5f * level), 1f).setEaseInBounce();
-        gameObject.GetComponent<Image>().sprite = flowerLevelSprit[level-1];
+        gameObject.GetComponent<Image>().sprite = flowerLevelSprit[level - 1];
     }
 
     private void PlayMergeEffect()
@@ -144,6 +146,61 @@ public class Flower : MonoBehaviour
             }
         }
     }
+
+    //     public RectTransform rectTransform;
+    //     public CanvasGroup canvasGroup;
+    //     public Canvas canvas;
+    //
+    //     public Vector3 originalPosition;
+    //     public Transform originalParent;
+    //
+    //     public bool isDroppedOnTarget = false;
+    // public GameObject parent; 
+    //     private void Awake()
+    //     {
+    //         rectTransform = GetComponent<RectTransform>();
+    //         gameObject.AddComponent<CanvasGroup>();
+    //         canvasGroup = GetComponent<CanvasGroup>();
+    //         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
+    //         parent = GameObject.FindGameObjectWithTag("flower");
+    //     }
+    //
+    //     public void OnBeginDrag(PointerEventData eventData)
+    //     {
+    //         originalPosition = rectTransform.localPosition;
+    //         originalParent = transform.parent;
+    //         canvasGroup.alpha = 0.6f;
+    //         canvasGroup.blocksRaycasts = false;
+    //         isDroppedOnTarget = false;
+    //         gameObject.transform.SetParent(canvas.transform);
+    //     }
+    //
+    //     public void OnDrag(PointerEventData eventData)
+    //     {
+    //         Vector2 localPointerPosition;
+    //         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+    //                 canvas.transform as RectTransform,
+    //                 eventData.position,
+    //                 eventData.pressEventCamera,
+    //                 out localPointerPosition))
+    //         {
+    //             rectTransform.localPosition = localPointerPosition;
+    //         }
+    //     }
+    //
+    //     public void OnEndDrag(PointerEventData eventData)
+    //     {
+    //         canvasGroup.alpha = 1f;
+    //         canvasGroup.blocksRaycasts = true;
+    //         
+    //
+    //         if (!isDroppedOnTarget)
+    //         {
+    //             // Return to original position
+    //             gameObject.transform.SetParent(parent.transform);
+    //             rectTransform.localPosition = originalPosition;
+    //         }
+    //     }
 }
 
 

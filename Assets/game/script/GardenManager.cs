@@ -9,19 +9,19 @@ public class GardenManager : MonoBehaviour
     public static GardenManager Instance;
 
     [Header("GameObject")]
-    public GameObject gardenGridPanel; 
+    public GameObject gardenGridPanel;
     public GameObject cellButtonPrefab;
-    public GameObject lostPanel,settingPanel,infoPanel;
+    public GameObject lostPanel, settingPanel, infoPanel;
 
     [Header("Prefab")]
-    public List<Flower> flowerPrefabs; 
+    public List<Flower> flowerPrefabs;
 
     public UICell[,] cells;
 
     public int rows = 5;
     public int columns = 5;
     public int minMatchCount = 3;
-   
+
 
     [Header("Image")]
     public Image random_flowerImage;
@@ -53,8 +53,11 @@ public class GardenManager : MonoBehaviour
 
         randomFlowerIndex = Random.Range(0, flowerPrefabs.Count);
         random_flowerImage.sprite = flowerPrefabs[randomFlowerIndex].GetComponent<Image>().sprite;
+        //Flower flower = Instantiate(flowerPrefabs[Random.Range(0,flowerPrefabs.Count)], transform.position, Quaternion.identity);
+        //flower.transform.SetParent(GameObject.FindGameObjectWithTag("flower").transform,false);
         AudioController.Instance.PlaySFX("rand");
-        LeanTween.scale(random_flowerImage.gameObject, Vector3.one, 0.5f).setEaseSpring().setOnComplete(()=> {
+        LeanTween.scale(random_flowerImage.gameObject, Vector3.one, 0.5f).setEaseSpring().setOnComplete(() =>
+        {
             isReady = true;
         });
 
@@ -73,7 +76,7 @@ public class GardenManager : MonoBehaviour
         {
             for (int j = 0; j < columns; j++)
             {
-              
+
                 GameObject newCellButton = Instantiate(cellButtonPrefab, gardenGridPanel.transform);
                 UICell cellComponent = newCellButton.GetComponent<UICell>();
                 cellComponent.SetCoordinates(i, j);
@@ -83,7 +86,7 @@ public class GardenManager : MonoBehaviour
         //SetChildrenLayersAndOrder();
     }
 
-    
+
     public void OnCellClicked(UICell cell)
     {
         gardenGridPanel.GetComponent<GridLayoutGroup>().enabled = false;
@@ -100,8 +103,8 @@ public class GardenManager : MonoBehaviour
 
     void PlantFlower(UICell cell)
     {
-        
-        Flower newFlower = Instantiate(flowerPrefabs[randomFlowerIndex], new Vector3(0,56f,0), Quaternion.identity);
+
+        Flower newFlower = Instantiate(flowerPrefabs[randomFlowerIndex], new Vector3(0, 56f, 0), Quaternion.identity);
 
         LeanTween.scale(newFlower.gameObject, Vector3.one * 2f, 0.3f).setEase(LeanTweenType.easeOutSine).setOnComplete(() =>
         {
@@ -111,11 +114,11 @@ public class GardenManager : MonoBehaviour
         newFlower.transform.SetParent(cell.transform, false);
         cell.PlantFlower(newFlower);
 
-       
+
         StartCoroutine(PlanFlowerAni(cell));
     }
 
-    
+
 
     IEnumerator PlanFlowerAni(UICell cell)
     {
@@ -124,11 +127,12 @@ public class GardenManager : MonoBehaviour
         CheckForMatches(cell);
 
         yield return new WaitForSeconds(0.5f);
-        
+
         randomFlowerIndex = Random.Range(0, flowerPrefabs.Count);
         random_flowerImage.sprite = flowerPrefabs[randomFlowerIndex].GetComponent<Image>().sprite;
         AudioController.Instance.PlaySFX("rand");
-        LeanTween.scale(random_flowerImage.gameObject, Vector3.one, 0.5f).setEaseSpring().setOnComplete(() => {
+        LeanTween.scale(random_flowerImage.gameObject, Vector3.one, 0.5f).setEaseSpring().setOnComplete(() =>
+        {
             isReady = true;
         });
     }
@@ -185,16 +189,16 @@ public class GardenManager : MonoBehaviour
                 // Ensure all cells have flowers before attempting to merge
                 if (cell.flower != null && matchingCells[0].flower != null)
                 {
-                    UICell baseCell = matchingCells[0]; 
+                    UICell baseCell = matchingCells[0];
 
                     foreach (UICell match in matchingCells)
                     {
-                        if (match != baseCell) 
+                        if (match != baseCell)
                         {
-                            Transform flowerTransform = match.transform.GetChild(1); 
+                            Transform flowerTransform = match.transform.GetChild(2);
                             flowerTransform.SetParent(baseCell.transform, true);
 
-                            LeanTween.moveLocal(flowerTransform.gameObject, Vector3.zero, 0.5f) 
+                            LeanTween.moveLocal(flowerTransform.gameObject, Vector3.zero, 0.5f)
                                 .setEaseInOutQuint()
                                 .setOnComplete(() =>
                                 {
@@ -214,9 +218,9 @@ public class GardenManager : MonoBehaviour
 
                     score += 10 * baseCell.flower.level;
                     UpdateTextUI();
-                 }
-
                 }
+
+            }
             else
             {
                 Debug.LogError("Attempted to merge but one or more flowers were null.");
@@ -235,13 +239,13 @@ public class GardenManager : MonoBehaviour
         int column = cell.GetColumn();
 
         // Initialize recursive check
-        FindMatchingNeighborsRecursive(cell, type, matchingNeighbors,level);
+        FindMatchingNeighborsRecursive(cell, type, matchingNeighbors, level);
 
         return matchingNeighbors;
     }
 
     // Recursive method to find all matching neighbors
-    void FindMatchingNeighborsRecursive(UICell cell, Flower.FlowerType type, List<UICell> matchingNeighbors,int level)
+    void FindMatchingNeighborsRecursive(UICell cell, Flower.FlowerType type, List<UICell> matchingNeighbors, int level)
     {
         // Get the cell's coordinates
         int row = cell.GetRow();
@@ -274,7 +278,7 @@ public class GardenManager : MonoBehaviour
                 // Check if the neighbor has a flower of the same type
                 if (neighborCell.flower != null && neighborCell.flower.flowerType == type && neighborCell.flower.level == level && !matchingNeighbors.Contains(neighborCell))
                 {
-                    FindMatchingNeighborsRecursive(neighborCell, type, matchingNeighbors,level);
+                    FindMatchingNeighborsRecursive(neighborCell, type, matchingNeighbors, level);
                 }
             }
         }
@@ -286,13 +290,13 @@ public class GardenManager : MonoBehaviour
         if (IsGridFull() && !HasPossibleMoves())
         {
             Debug.Log("Game Over! No more possible moves.");
-            if(score > highscore)
+            if (score > highscore)
             {
                 highscore = score;
                 PlayerPrefs.SetInt(highscorekey, highscore);
                 UpdateTextUI();
 
-                
+
             }
 
             lostPanel.SetActive(true);

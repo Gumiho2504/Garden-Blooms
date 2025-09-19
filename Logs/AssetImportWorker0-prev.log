@@ -1,36 +1,36 @@
-Unity Editor version:    6000.0.12f1 (7defd84cdab8)
-Branch:                  trunk
+Unity Editor version:    6000.0.38f1 (82314a941f2d)
+Branch:                  6000.0/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 14.5 (Build 23F79)
-Darwin version:          23.5.0
+macOS version:           Version 15.5 (Build 24F74)
+Darwin version:          24.5.0
 Architecture:            arm64
 Running under Rosetta:   NO
-Available memory:        8192 MB
+Available memory:        16384 MB
 Using pre-set license
 Pro License: YES
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/MacOS/Unity
+/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/rose/Documents/UnityGame/Garden Blooms
+/Users/macbook/Documents/Unity-Game/Garden-Blooms
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49554
+63899
 -job-worker-count
 3
 -background-job-worker-count
 8
--asset-garbage-collectors
+-gc-helper-count
 1
-Successfully changed project path to: /Users/rose/Documents/UnityGame/Garden Blooms
-/Users/rose/Documents/UnityGame/Garden Blooms
+Successfully changed project path to: /Users/macbook/Documents/Unity-Game/Garden-Blooms
+/Users/macbook/Documents/Unity-Game/Garden-Blooms
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -66,75 +66,85 @@ Successfully changed project path to: /Users/rose/Documents/UnityGame/Garden Blo
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8671824896]  Target information:
+Player connection [8454496000]  Target information:
 
-Player connection [8671824896]  * "[IP] 192.168.1.113 [Port] 0 [Flags] 2 [Guid] 3208363192 [EditorId] 3208363192 [Version] 1048832 [Id] OSXEditor(0,roses-Mac-mini-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8454496000]  * "[IP] 192.168.5.13 [Port] 0 [Flags] 2 [Guid] 2476670588 [EditorId] 2476670588 [Version] 1048832 [Id] OSXEditor(0,MacBooks-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8671824896] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8671824896] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8454496000] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8454496000] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
-[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
-Refreshing native plugins compatible for Editor in 2.76 ms, found 3 plugins.
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 6000.0.12f1 (7defd84cdab8)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/rose/Documents/UnityGame/Garden Blooms/Assets
+Initialize engine version: 6000.0.38f1 (82314a941f2d)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/macbook/Documents/Unity-Game/Garden-Blooms/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
- preferred device: Apple M2 (high power)
+ preferred device: Apple M1 Pro (high power)
 Metal devices available: 1
-0: Apple M2 (high power)
-Using device Apple M2 (high power)
-Initializing Metal device caps: Apple M2
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56117
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56970
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/6000.0.12f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.005816 seconds.
-- Loaded All Assemblies, in  0.399 seconds
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.38f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.38f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.0.38f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.005640 seconds.
+- Loaded All Assemblies, in  0.322 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 96 ms
+Android Extension - Scanning For ADB Devices 81 ms
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.608 seconds
-Domain Reload Profiling: 1006ms
-	BeginReloadAssembly (103ms)
+- Finished resetting the current domain, in  0.600 seconds
+Domain Reload Profiling: 923ms
+	BeginReloadAssembly (96ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (181ms)
-		LoadAssemblies (104ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (146ms)
+		LoadAssemblies (97ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (178ms)
-			TypeCache.Refresh (177ms)
-				TypeCache.ScanAssembly (157ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (127ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (608ms)
+	FinalizeReload (601ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (577ms)
+		SetupLoadedEditorAssemblies (561ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (326ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (10ms)
-			ProcessInitializeOnLoadAttributes (80ms)
-			ProcessInitializeOnLoadMethodAttributes (155ms)
+			InitializePlatformSupportModulesInManaged (356ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (100ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,510 +153,342 @@ Domain Reload Profiling: 1006ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.272 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.612 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Mono: successfully reloaded assembly
-Package Manager log level set to [2]
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.803 seconds
-Domain Reload Profiling: 2075ms
-	BeginReloadAssembly (725ms)
+- Finished resetting the current domain, in  0.663 seconds
+Domain Reload Profiling: 1270ms
+	BeginReloadAssembly (96ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (35ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (471ms)
-		LoadAssemblies (298ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (447ms)
+		LoadAssemblies (286ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (230ms)
-			TypeCache.Refresh (167ms)
-				TypeCache.ScanAssembly (143ms)
-			BuildScriptInfoCaches (53ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (803ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (642ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (156ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (40ms)
-			ProcessInitializeOnLoadAttributes (290ms)
-			ProcessInitializeOnLoadMethodAttributes (152ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Launching external process: /Applications/Unity/Hub/Editor/6000.0.12f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.09 seconds
-Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5029 unused Assets / (202.3 KB). Loaded Objects now: 5630.
-Memory consumption went from 116.1 MB to 115.9 MB.
-Total: 23.455917 ms (FindLiveObjects: 1.437333 ms CreateObjectMapping: 0.855042 ms MarkObjects: 20.039500 ms  DeleteObjects: 1.122834 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x31bf8b000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.215 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.673 seconds
-Domain Reload Profiling: 1890ms
-	BeginReloadAssembly (562ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (111ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (161ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (560ms)
-		LoadAssemblies (515ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (186ms)
-			TypeCache.Refresh (19ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (160ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (147ms)
+			BuildScriptInfoCaches (31ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (674ms)
+	FinalizeReload (664ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (496ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (80ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (231ms)
-			ProcessInitializeOnLoadMethodAttributes (147ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (121.6 KB). Loaded Objects now: 5633.
-Memory consumption went from 123.2 MB to 123.1 MB.
-Total: 8.559500 ms (FindLiveObjects: 1.271875 ms CreateObjectMapping: 0.311625 ms MarkObjects: 6.013625 ms  DeleteObjects: 0.961541 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x306ae7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.748 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.730 seconds
-Domain Reload Profiling: 1480ms
-	BeginReloadAssembly (254ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (155ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (428ms)
-		LoadAssemblies (256ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (25ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (171ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (730ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (525ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (101ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (36ms)
-			ProcessInitializeOnLoadAttributes (224ms)
-			ProcessInitializeOnLoadMethodAttributes (161ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (128.9 KB). Loaded Objects now: 5635.
-Memory consumption went from 123.1 MB to 123.0 MB.
-Total: 6.892083 ms (FindLiveObjects: 0.358458 ms CreateObjectMapping: 0.310584 ms MarkObjects: 5.476625 ms  DeleteObjects: 0.746000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 2509.329286 seconds.
-  path: Assets/game/Scenes/menu.unity
-  artifactKey: Guid(0203c39f2e6f347e4aa61033c348e80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/Scenes/menu.unity using Guid(0203c39f2e6f347e4aa61033c348e80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'b77a1c4b6035b5b1f0a9e6a7a5868eb9') in 0.018074834 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x31f7c7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.543 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.629 seconds
-Domain Reload Profiling: 1174ms
-	BeginReloadAssembly (172ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (319ms)
-		LoadAssemblies (228ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (106ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (630ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (457ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (231ms)
-			ProcessInitializeOnLoadMethodAttributes (164ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (406.1 KB). Loaded Objects now: 5639.
-Memory consumption went from 124.1 MB to 123.7 MB.
-Total: 8.393708 ms (FindLiveObjects: 0.887666 ms CreateObjectMapping: 0.280959 ms MarkObjects: 6.005250 ms  DeleteObjects: 1.219292 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 268.709550 seconds.
-  path: Assets/game/Scenes/menu.unity
-  artifactKey: Guid(0203c39f2e6f347e4aa61033c348e80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/Scenes/menu.unity using Guid(0203c39f2e6f347e4aa61033c348e80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: 'be43192d6ace3c4ec8e4c23fec883dd1') in 0.006494042 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.755673 seconds.
-  path: Assets/game/Scenes/game.unity
-  artifactKey: Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/Scenes/game.unity using Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '85ceda9752a5d977be7d5e7da9195f49') in 0.00082625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x306ae7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.578 seconds
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.631 seconds
-Domain Reload Profiling: 1211ms
-	BeginReloadAssembly (186ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (20ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (74ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (334ms)
-		LoadAssemblies (236ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (142ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (118ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (631ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (456ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (33ms)
-			ProcessInitializeOnLoadAttributes (236ms)
-			ProcessInitializeOnLoadMethodAttributes (152ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (132.0 KB). Loaded Objects now: 5641.
-Memory consumption went from 124.2 MB to 124.0 MB.
-Total: 6.731125 ms (FindLiveObjects: 0.328459 ms CreateObjectMapping: 0.228584 ms MarkObjects: 5.183833 ms  DeleteObjects: 0.990000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 493.518459 seconds.
-  path: Assets/game/Scenes/game.unity
-  artifactKey: Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/Scenes/game.unity using Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '8366203d07ddd38b4b454b6465338538') in 0.004637083 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 177.372749 seconds.
-  path: Assets/game/Scenes/game.unity
-  artifactKey: Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/Scenes/game.unity using Guid(3fc8acdd13e6c734bafef6554d6fdbcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '5b853810501591e66d8748101370cc0e') in 0.002552 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (0 B). Loaded Objects now: 5641.
-Memory consumption went from 109.6 MB to 109.6 MB.
-Total: 17.560125 ms (FindLiveObjects: 0.220875 ms CreateObjectMapping: 0.079375 ms MarkObjects: 17.254334 ms  DeleteObjects: 0.005333 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (0 B). Loaded Objects now: 5641.
-Memory consumption went from 109.4 MB to 109.4 MB.
-Total: 4.532542 ms (FindLiveObjects: 0.134667 ms CreateObjectMapping: 0.072625 ms MarkObjects: 4.320625 ms  DeleteObjects: 0.004209 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x306ae7000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.587 seconds
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.647 seconds
-Domain Reload Profiling: 1236ms
-	BeginReloadAssembly (170ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (81ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (354ms)
-		LoadAssemblies (208ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (181ms)
-			TypeCache.Refresh (99ms)
-				TypeCache.ScanAssembly (75ms)
-			BuildScriptInfoCaches (76ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (647ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (498ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (53ms)
-			ProcessInitializeOnLoadAttributes (278ms)
-			ProcessInitializeOnLoadMethodAttributes (146ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (132.0 KB). Loaded Objects now: 5643.
-Memory consumption went from 123.8 MB to 123.6 MB.
-Total: 5.995208 ms (FindLiveObjects: 0.421667 ms CreateObjectMapping: 0.230125 ms MarkObjects: 4.643375 ms  DeleteObjects: 0.699541 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x300113000 may have been prematurely finalized
-- Loaded All Assemblies, in  0.491 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.588 seconds
-Domain Reload Profiling: 1082ms
-	BeginReloadAssembly (152ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (14ms)
-	LoadAllAssembliesAndSetupDomain (291ms)
-		LoadAssemblies (207ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (118ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (99ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (588ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (428ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (34ms)
-			ProcessInitializeOnLoadAttributes (225ms)
-			ProcessInitializeOnLoadMethodAttributes (145ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (153.7 KB). Loaded Objects now: 5645.
-Memory consumption went from 124.0 MB to 123.8 MB.
-Total: 6.414166 ms (FindLiveObjects: 0.330125 ms CreateObjectMapping: 0.282708 ms MarkObjects: 4.932417 ms  DeleteObjects: 0.868459 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 3761.573007 seconds.
-  path: Assets/game/script/Flower.cs
-  artifactKey: Guid(95df72ab9d6244311910a32b0b0b5cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/game/script/Flower.cs using Guid(95df72ab9d6244311910a32b0b0b5cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
- -> (artifact id: '710a1bd291a669f509d3d51ad6af5e9a') in 0.286492084 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x300113000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.331 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.560 seconds
-Domain Reload Profiling: 1894ms
-	BeginReloadAssembly (711ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (60ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (199ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (559ms)
-		LoadAssemblies (711ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (182ms)
-			TypeCache.Refresh (33ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (135ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (561ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (403ms)
+		SetupLoadedEditorAssemblies (578ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (33ms)
-			ProcessInitializeOnLoadAttributes (220ms)
-			ProcessInitializeOnLoadMethodAttributes (123ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (432ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/6000.0.38f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5027 unused Assets / (0.9 MB). Loaded Objects now: 5647.
-Memory consumption went from 124.0 MB to 123.1 MB.
-Total: 6.408209 ms (FindLiveObjects: 0.302667 ms CreateObjectMapping: 0.225833 ms MarkObjects: 5.069375 ms  DeleteObjects: 0.810209 ms)
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5740 unused Assets / (1.5 MB). Loaded Objects now: 6234.
+Memory consumption went from 104.7 MB to 103.2 MB.
+Total: 6.391625 ms (FindLiveObjects: 0.299125 ms CreateObjectMapping: 0.168875 ms MarkObjects: 4.788167 ms  DeleteObjects: 1.134916 ms)
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 4664.711498 seconds.
+  path: Assets/game/ui/item/ITEAM 4.png
+  artifactKey: Guid(eac6a2bb5f0b94fb8ac38b9d656845fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/ITEAM 4.png using Guid(eac6a2bb5f0b94fb8ac38b9d656845fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fab49b36e8f910be7e32d1e9f982bf37') in 0.05815525 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd
+  artifactKey: Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd using Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62aa6e2cc4e41a4af608695a48f996a3') in 0.005943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/LeanTween/Examples/Material/Futuro_ButtonBack.psd
+  artifactKey: Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Material/Futuro_ButtonBack.psd using Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '54880424a3fb9c9d1ba7596a7fbcd197') in 0.005015666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/LeanTween/Examples/Textures/Dude2d.png
+  artifactKey: Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Textures/Dude2d.png using Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85f570ecaa1a8f58727869c7ee84a9eb') in 0.006110167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/game/ui/Plant Bloom UI/asset/info-button.png
+  artifactKey: Guid(b629d3170253245aa97e3ce11ed46eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/asset/info-button.png using Guid(b629d3170253245aa97e3ce11ed46eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e736439a7551b652f0840a9a7294bd3b') in 0.006096292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-1 (1).png
+  artifactKey: Guid(1d76cbdd670fc4da4a156b426666d928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-1 (1).png using Guid(1d76cbdd670fc4da4a156b426666d928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35ffb6e85943f2ce256bf15a7042d01b') in 0.00785025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/game/ui/items/items/Plant-1 (1).png
+  artifactKey: Guid(b027fa9ce85af4c9fa549005dbccea15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-1 (1).png using Guid(b027fa9ce85af4c9fa549005dbccea15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c765ba2ecf7ce0fc140ad32e7f2e400') in 0.007179084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/game/ui/Plant Bloom UI/asset/high-scoe.png
+  artifactKey: Guid(df4c62d97c3aa4b59b05e58f50f15aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/asset/high-scoe.png using Guid(df4c62d97c3aa4b59b05e58f50f15aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5991b721475bb5ff1fc3e1999d9436a8') in 0.005495416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/game/ui/item/1000.png
+  artifactKey: Guid(2ed92ec235c914f0dae6db882f355dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/1000.png using Guid(2ed92ec235c914f0dae6db882f355dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76a1ee7d26cd048953a604d70fe67b32') in 0.006888167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/LeanTween/Examples/Material/Futuro_Bar.psd
+  artifactKey: Guid(492b9988436bd45049a9a6bc52ac8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Material/Futuro_Bar.psd using Guid(492b9988436bd45049a9a6bc52ac8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ca0e920dd42119670d461c59ae32de1') in 0.004435458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/game/ui/Plant Bloom UI/asset/exit.png
+  artifactKey: Guid(8aeec1175825b4b4385df0cc7dba8f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/asset/exit.png using Guid(8aeec1175825b4b4385df0cc7dba8f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88cfdd12ae805403ce67bc60df881639') in 0.005680375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/game/ui/items/items/Plant-2 (1).png
+  artifactKey: Guid(641b4c5263b7d41a490d8bd26e831430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-2 (1).png using Guid(641b4c5263b7d41a490d8bd26e831430) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4662485558445103c20268c35f279a7') in 0.008237584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-1 (4).png
+  artifactKey: Guid(e1beacade078a45ee9d860f39d3dd851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-1 (4).png using Guid(e1beacade078a45ee9d860f39d3dd851) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2f5112e24dcdaa7705dca5b93619da1') in 0.007372209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/game/ui/items/items/Plant-1 (2).png
+  artifactKey: Guid(cac55562eee904c53875d48c672a50e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-1 (2).png using Guid(cac55562eee904c53875d48c672a50e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67a07917342716b8db3fc4835a609373') in 0.007692291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/game/ui/item/200.png
+  artifactKey: Guid(befd8553d28c6402ca4719e50a3fde78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/200.png using Guid(befd8553d28c6402ca4719e50a3fde78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdf722bc3b07d3757c8c72b9777c1725') in 0.007391792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/game/ui/item/ITEAM 5.png
+  artifactKey: Guid(bf46b7519b6874e7db2635d443a2b633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/ITEAM 5.png using Guid(bf46b7519b6874e7db2635d443a2b633) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b451bbc927171ded6d9df6bb1323366') in 0.006884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-2 (2).png
+  artifactKey: Guid(faf7bf8034fec444689ed1e4910e02c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-2 (2).png using Guid(faf7bf8034fec444689ed1e4910e02c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b45dec2239ca17b7181e37323ff8beb') in 0.007180875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-3 (2).png
+  artifactKey: Guid(4777d887cc91646d79deee7d986f29c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-3 (2).png using Guid(4777d887cc91646d79deee7d986f29c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0a37025cf8547245ad6c81bb8be59697') in 0.0082165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-3 (4).png
+  artifactKey: Guid(a376258a628d042fabfb0e79d9f78963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-3 (4).png using Guid(a376258a628d042fabfb0e79d9f78963) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23b99487271769fdd5922566305c958e') in 0.0072325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/game/ui/items/items/Plant-2 (2).png
+  artifactKey: Guid(859406e8c7e7a45e8b5fbf5610c46d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-2 (2).png using Guid(859406e8c7e7a45e8b5fbf5610c46d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87e870582d30b23b4513c27ed497458e') in 0.006775667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/game/ui/items/items/Plant-3 (3).png
+  artifactKey: Guid(29905552c7e1643308bd74f92e819739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-3 (3).png using Guid(29905552c7e1643308bd74f92e819739) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f186f2e9025d302d0725b8a74356e78c') in 0.006887458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/game/ui/items/items/Plant-4 (1).png
+  artifactKey: Guid(31308444dcefe4770b4b26cf0e2695d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-4 (1).png using Guid(31308444dcefe4770b4b26cf0e2695d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f28719d73079ea8027e873f5e465faf') in 0.006502083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/game/ui/Plant Bloom UI/asset/stting.png
+  artifactKey: Guid(c8dc8028516da45e9bb148901360223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/asset/stting.png using Guid(c8dc8028516da45e9bb148901360223b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41dbd6559a93835b25e6e2560ccd3137') in 0.005674542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/game/ui/items/items/Plant-4 (4).png
+  artifactKey: Guid(6ae1357aae89b48a8862442f56f857cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-4 (4).png using Guid(6ae1357aae89b48a8862442f56f857cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef9255e5165d2dfe65820356f51d9eea') in 0.008455167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-4 (1).png
+  artifactKey: Guid(6025808d6cc1940a79fcb7f12f415028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-4 (1).png using Guid(6025808d6cc1940a79fcb7f12f415028) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '032032db81aad57e0684325c291cf64a') in 0.006508375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/LeanTween/Examples/Textures/PowerUpStar.png
+  artifactKey: Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Textures/PowerUpStar.png using Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93ec0c9747c6537d32013d763b5a3207') in 0.005666958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/game/ui/items/items/Plant-3 (4).png
+  artifactKey: Guid(dd632fe93443845a8860b3a73104f042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-3 (4).png using Guid(dd632fe93443845a8860b3a73104f042) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '581285e21bd9238cbc66391491fd66a1') in 0.006424417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/game/ui/Plant Bloom UI/UI-2.png
+  artifactKey: Guid(da0a8b4385bf7497d9d8acaa1098bedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/UI-2.png using Guid(da0a8b4385bf7497d9d8acaa1098bedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f405ae68feff2e33b24d5922ed169c69') in 0.00627675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/game/ui/Plant Bloom UI/UI-1.png
+  artifactKey: Guid(693793ea519284fbdb49c718317c8ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/UI-1.png using Guid(693793ea519284fbdb49c718317c8ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74513c5313ffbee71c230e23da7146ff') in 0.007583625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd
+  artifactKey: Guid(b8aaa707027cc4f79af3439c5dbc9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Material/Futuro_ButtonBackDark.psd using Guid(b8aaa707027cc4f79af3439c5dbc9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f14ed00a6a7c9601c17caa28852d1c2') in 0.0049075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/game/ui/item/500.png
+  artifactKey: Guid(71bc377584aad4036b0f43d35d09e2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/500.png using Guid(71bc377584aad4036b0f43d35d09e2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91b4172eb63855b335c487052eeef38f') in 0.005806334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/game/ui/Plant Bloom UI/items/Plant-4 (3).png
+  artifactKey: Guid(cfcf4258f489945ce8a73b5023289198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/items/Plant-4 (3).png using Guid(cfcf4258f489945ce8a73b5023289198) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcb846c71389585e3f72813eadbaf8f8') in 0.006490084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/game/ui/items/items/Plant-2 (4).png
+  artifactKey: Guid(31d07b43e8de84e7cb25d29589788eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/items/items/Plant-2 (4).png using Guid(31d07b43e8de84e7cb25d29589788eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '218707a48cd33c1a29d8e21ef371fb7b') in 0.005891667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/game/ui/item/100.png
+  artifactKey: Guid(a61366b50d16140eb8189cd84f0baaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/item/100.png using Guid(a61366b50d16140eb8189cd84f0baaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d0de7c6d748d250fbc13d6b5e39c2e1') in 0.006148209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/LeanTween/Examples/Textures/DustCloud.png
+  artifactKey: Guid(c4c548a339b4d41a590928c0c98934a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Textures/DustCloud.png using Guid(c4c548a339b4d41a590928c0c98934a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a335815fbdcd1c7de591bdebc95f7bb8') in 0.007404542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/game/ui/Plant Bloom UI/UI-3.png
+  artifactKey: Guid(20625f60e61cd45f2a85c63a6fc5ca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/game/ui/Plant Bloom UI/UI-3.png using Guid(20625f60e61cd45f2a85c63a6fc5ca1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af8d786f69658b541e8ef1b7870fbcc7') in 0.006192375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
